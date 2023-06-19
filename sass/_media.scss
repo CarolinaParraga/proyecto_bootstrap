@@ -1,0 +1,31 @@
+@import '_mixin.scss';
+@media (max-width: 800px) {
+
+      /*contacto*/
+    .container-contacto form{
+        width: 100%;
+    }
+
+  }
+
+  @media (max-width: 600px) {
+
+  .col-blog{
+    padding: 10px !important;
+    margin: 10px !important;
+  }
+
+  .col-blog img{
+    width: 350px !important;
+    height: 400px !important;
+  }
+  .detalle-carrusel{
+    margin: 10px !important;
+
+  }
+  .detalle-carrusel img{
+      width: 50% !important;
+      margin-left: 100px !important;
+  }
+
+}

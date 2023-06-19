@@ -1,0 +1,112 @@
+@import '_mixin.scss';
+
+@keyframes cambio{
+    0%{margin-left: 0;}
+    30%{margin-left:0;}
+
+    35%{margin-left: -100%;}
+    65%{margin-left: -100%;}
+
+    70%{margin-left: -200%;}
+    100%{margin-left: -200%;}
+}
+
+
+main {
+	padding-top: 6rem;
+}
+
+/*placeholder y exted*/
+%container{
+   
+
+	height: auto;
+}
+%columna{
+    text-align: left;
+}
+
+@include background-image('contacto', '100%', '100%', 'fixed', '0', '6rem', '0');
+.container-contacto {
+	
+	form {
+		width: 450px;
+		margin: auto;
+		background:$form-fondo;
+		padding: 10px 20px;
+		box-sizing: border-box;
+		margin-top: 20px;
+		border-radius: 7px;
+		h2 {
+			color: $button-texto;
+			text-align: center;
+			margin: 0;
+			font-size: 30px;
+			margin-bottom: 20px;
+			font-weight: 600;
+		}
+		textarea {
+			min-height: 100px;
+			max-height: 200px;
+			max-width: 100%;
+		}
+	}
+}
+.container-contacto form input,textarea {
+	width: 100%;
+	margin-bottom: 20px;
+	padding: 7px;
+	box-sizing: border-box;
+	font-size: 17px;
+	border: none;
+}
+.container-productos {
+	@extend %container;
+	
+	.card {
+		background: $card-fondo;
+		color: $button-texto;
+		border-radius: 8px;
+		border: 1px solid $button-fondo;
+		box-shadow: 0 2px 2px $box-snadow;
+	
+		transition: all 0.25s;
+		&:hover {
+			transform: translateY(-15px);
+			box-shadow: 0 12px 16px  $box-snadow;
+			.card-ocasion {
+				transform: scale(1.2);
+			}
+		}
+		img {
+			height: 300px;
+			cursor: pointer;
+		}
+		h5 {
+			a {
+				text-decoration: none;
+				background: $card-fondo;
+				color: $button-texto;
+			}
+		}
+		a {
+			background-color: $button-fondo;
+		}
+		button {
+			padding: 10px;
+			display: block;
+			width: 50%;
+			margin: 0 auto;
+			color: white;
+			background-color: $button-fondo;
+		}
+	}
+}
+/*ventana modal*/
+
+
+
+
+
+
+
